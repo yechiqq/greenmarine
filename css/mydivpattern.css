@@ -1,0 +1,12 @@
+.div-pattern2{
+    background:var(--maincolor) url('../images/div-pattern-reversecircle.png') top left repeat-x;
+    height:30px;
+    width:100%;
+    display:block;
+}
+.div-pattern{
+    background:var(--maincolor) url('../images/div-pattern-reversetriangle.png') top left repeat-x;
+    height:30px;
+    width:100%;
+    display:block;
+}

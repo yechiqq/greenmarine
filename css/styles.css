@@ -1,0 +1,178 @@
+:root {
+	--maincolor: #0047ab;
+	--secondcolor: #F58A2E; 
+}
+
+/* ===============================================
+   General styles
+   ============================================== */
+
+body { 
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+.logoimage {
+	height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.navbar {
+	background-color: #FFFFFF;
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(127, 90, 5, 1);
+}
+.navbar .nav > li > a {
+color: #1B0B03;
+}
+.navbar .nav > .active > a {
+color: #fff;
+background-color: var(--maincolor);
+border-radius: 15px 0px 15px 0px;
+}
+
+/* Links */
+a {
+	color: var(--maincolor);
+}
+a:hover, a:focus {
+	color: var(--secondcolor);
+}
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: url(../images/info3.jpg) no-repeat center top;
+	padding-top: 60px;
+	text-align: center;
+	background-position: center center;
+	min-height: 700px;
+	width: 100%;
+	background-size: cover;
+}
+#headerwrap h1 {
+	margin-top: 200px;
+	font-size: 50px;
+	font-weight: 400;
+}
+#headerwrap p {
+	font-size: 22px;
+	font-weight: 300;
+}
+#headerwrap span {
+	padding: 3px;
+	color: #ffffff;
+	background-color: var(--maincolor);
+}
+#headerwrap .btn {
+	font-weight: 500;
+	font-size: 20px;
+	margin: 50px 0;
+	background-color: var(--maincolor);
+	color: #fff;
+	border-radius: 5px;
+}
+#headerwrap .btn:hover, #headerwrap .btn:focus {
+	background-color:#fff;
+	color:#000; 
+	outline: 0px;
+	border-radius: 5px;
+}
+
+.space {
+	padding: 20px 0;
+}
+.headspace {
+	padding: 80px 0;
+}
+.pr-10 {
+	padding-right: 10px;
+}
+.pb-10 {
+	padding-bottom: 10px;
+}
+.colored {
+	color: var(--maincolor);
+}
+.secondcolored {
+	color: var(--secondcolor);
+}
+.bgcolored {
+	background-color: var(--maincolor);
+}
+
+#about {
+	background: #FFF;
+	padding: 100px 0;
+}
+#websiteservices {
+	background: #FFFFFF;
+	padding-top: 100px;
+}
+#mobileservices {
+	background: #FFFFFF;
+	padding: 100px 0;
+}
+
+.isotope-container {
+	overflow: hidden;
+}
+.isotope-item {
+	margin-bottom: 40px;
+}
+
+#portfolio {
+	background: black;
+	color: #fff;
+	padding: 50px 0 20px 0;
+}
+#contact {
+	padding-bottom: 100px;
+}
+#aboutus {
+	padding-bottom: 100px;
+}
+
+footer {
+	background: #000;
+	padding: 25px 0 15px 0;
+	text-align: center;
+}
+footer span.copyright {
+	line-height: 40px;
+	color: #FFF;
+	font-weight: 400;
+}
+footer span.copyright a {
+	color: #FFF;
+}
+
+ul.social-buttons li {
+	display:inline;
+}
+ul.social-buttons li a {
+	font-size: 22px;
+	color: #FFFFFF;
+	margin-right: 12px;
+}
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+	color: var(--maincolor);
+} 
+
+/* ==========================================
+   MEDIA QUERIES
+   ======================================== */
+@media screen and (max-width:1050px), screen and (max-device-width:1050px) {}
+
+@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait) {}
+
+@media screen and (max-width:769px) {
+	.headspace {
+		padding: 100px 0;
+	}
+}
+@media screen and (max-width:480px) {
+	.headspace {
+		padding: 100px 0;
+	}
+}
