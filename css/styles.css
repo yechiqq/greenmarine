@@ -1,5 +1,5 @@
 :root {
-	--maincolor: #0047ab;
+	--maincolor: #0e4935;
 	--secondcolor: #F58A2E; 
 }
 
@@ -8,45 +8,68 @@
    ============================================== */
 
 body { 
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: "Work Sans";
 }
 
 .logoimage {
-	height: 20px;
+	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.navbar {
-	background-color: #FFFFFF;
+header {
 	padding: 20px 0;
 	border-bottom: 1px solid rgba(127, 90, 5, 1);
 }
-.navbar .nav > li > a {
-color: #1B0B03;
-}
-.navbar .nav > .active > a {
-color: #fff;
-background-color: var(--maincolor);
-border-radius: 15px 0px 15px 0px;
+
+.nav-link {
+	color: hsla(0,0%,74.90196078%,1);
+	font-weight: 500;
 }
 
-/* Links */
-a {
-	color: var(--maincolor);
+.nav-item.active {
+	text-decoration: underline;
+	text-underline-offset: 5px;
 }
-a:hover, a:focus {
-	color: var(--secondcolor);
+
+.thememain {
+	background-color: var(--maincolor);
+	color: hsla(0,0%,74.90196078%,1);
+}
+
+.themegray {
+	background-color: #909090;
+	color: hsla(0,0%,89.02%,1);
+}
+
+.themelight {
+	background-color: #e3e3e3;
+	color: hsla(55.38,6.22%,59.02%,1);
 }
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
 
+   .carousel-item {
+	height: 500px;
+  }
+  
+  .carousel-item img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  min-height: 500px;
+  }
+
+  .themegrayborder {
+	border: 1px solid #04dc65;
+	padding: 10px;
+  }
+
 #headerwrap {
-	background: url(../images/info3.jpg) no-repeat center top;
-	padding-top: 60px;
+	margin-top: 100px;
 	text-align: center;
 	background-position: center center;
-	min-height: 700px;
+	height: 500px;
 	width: 100%;
 	background-size: cover;
 }
@@ -100,6 +123,9 @@ a:hover, a:focus {
 .bgcolored {
 	background-color: var(--maincolor);
 }
+.colorlightgreen {
+	color: #04dc65;
+}
 
 #about {
 	background: #FFF;
@@ -133,31 +159,19 @@ a:hover, a:focus {
 	padding-bottom: 100px;
 }
 
-footer {
-	background: #000;
-	padding: 25px 0 15px 0;
-	text-align: center;
-}
-footer span.copyright {
-	line-height: 40px;
-	color: #FFF;
-	font-weight: 400;
-}
-footer span.copyright a {
-	color: #FFF;
+.pt100 {
+	padding-top: 100px;
 }
 
-ul.social-buttons li {
-	display:inline;
+.pb100 {
+	padding-bottom: 100px;
 }
-ul.social-buttons li a {
-	font-size: 22px;
-	color: #FFFFFF;
-	margin-right: 12px;
+
+.ptb50 {
+	padding: 50px 0;
 }
-ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
-	color: var(--maincolor);
-} 
+
+
 
 /* ==========================================
    MEDIA QUERIES
