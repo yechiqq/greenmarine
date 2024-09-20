@@ -65,6 +65,11 @@ header {
 	padding: 10px;
   }
 
+  .commitment {
+	font-size: 20px;
+	font-weight: 500;
+  }
+
 #headerwrap {
 	margin-top: 100px;
 	text-align: center;
