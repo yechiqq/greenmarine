@@ -11,19 +11,14 @@ body {
 	font-family: "Work Sans";
 }
 
-.logoimage {
-	width: 100%;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
 header {
-	padding: 20px 0;
 	border-bottom: 1px solid rgba(127, 90, 5, 1);
 }
 
 .nav-link {
 	color: hsla(0,0%,74.90196078%,1);
 	font-weight: 500;
+	color:#FFF;
 }
 
 .nav-item.active {
@@ -181,17 +176,35 @@ header {
 /* ==========================================
    MEDIA QUERIES
    ======================================== */
-@media screen and (max-width:1050px), screen and (max-device-width:1050px) {}
-
-@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait) {}
-
 @media screen and (max-width:769px) {
 	.headspace {
 		padding: 100px 0;
 	}
+	.smallview {
+		display: block;
+	}
+	.bigview {
+		display: none;
+	}
+	.logoimage {
+		width: 400px;
+	}
+	#headerwrap {
+		margin-top: 0px;
+	}
 }
-@media screen and (max-width:480px) {
+@media screen and (min-width:770px) {
 	.headspace {
 		padding: 100px 0;
+	}
+	.smallview {
+		display: none;
+	}
+	.bigview {
+		display: block;
+	}
+	.logoimage {
+		width: 100%;
+		margin-top: 20px;
 	}
 }
