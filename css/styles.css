@@ -170,8 +170,21 @@ header {
 .ptb50 {
 	padding: 50px 0;
 }
+.ptb20 {
+	padding: 20px 0;
+}
 
-
+ul.social-buttons li {
+	display:inline;
+}
+ul.social-buttons li a {
+	font-size: 22px;
+	color: #FFFFFF;
+	margin-right: 12px;
+}
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+	color: var(--maincolor);
+} 
 
 /* ==========================================
    MEDIA QUERIES
